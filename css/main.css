@@ -18,6 +18,7 @@ img {
 }
 
 .container {
+    width: 95%;
     max-width: 120rem; /* = 1200px */
     margin: 0 auto;
 }
@@ -73,8 +74,15 @@ h4 {
     text-align: center;
     border: none;
     border-radius: 1rem;
-    /* display: block; */
-    /* flex: 0 0 100%; */
+    display: block;
+    flex: 0 0 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .button {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
 }
 
 .button:hover {
@@ -117,6 +125,13 @@ h4 {
     text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+    .header-content {
+        text-align: left;
+    }
+    
+}
+
 .header-content h1 {
     color: #ffffff;
     padding-bottom: 2rem;
@@ -126,10 +141,16 @@ h4 {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 3rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 /* Navigation */
@@ -137,30 +158,76 @@ h4 {
 .nav a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 2rem; /* = 23px*/
+    font-size: 2.4rem; /* = 23px*/
     padding-right: 1rem;
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav a {
+        display: inline-block;
+        font-size: 2rem; /* = 23px*/
+        margin-right: 2rem;
+    }
+    .nav a:last-of-type {
+        padding: 0;
+    }
 }
 
 .nav a:hover {
     color: #71b100;
 }
 
-.nav a:last-of-type {
-    padding: 0;
+/*Hamburger menu*/
+
+.hamburger img {
+    width: 5rem;
 }
+
+@media only screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+.navigation:target {
+    display: block;
+}
+
+.navigation {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .navigation {
+        display: block;
+    }
+}
+
 
 /* Us icons */
 
-.us-icons {
-    display: flex;
-    justify-content: space-evenly;
+@media only screen and (min-width: 768px) {
+    .us-icons {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
+
 .icon {
-    flex-basis: calc(33.3% - 1rem);
     text-align: center;
-    line-height: 2.5rem;
+    /* line-height: 2.5rem; */
 }
+
+
+@media only screen and (min-width: 768px) {
+    .icon {
+        flex-basis: calc(33.3% - 1rem);
+
+    }
+}
+
 
 .icon h3 {
     text-transform: uppercase;
@@ -168,18 +235,28 @@ h4 {
 
 /* Ads */
 
-.card-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+@media only screen and (min-width: 768px) {
+    .card-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 .card {
-    flex: 0 0 calc(33.3% - 1rem);
     border: 1px solid #b5b5b5;
     background: #f5f5f5;
     margin-bottom: 2rem;
 }
+
+
+@media only screen and (min-width: 768px) {
+    .card {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+
+
 .card-body {
     padding: 2rem;
 }
@@ -239,35 +316,44 @@ h4 {
 
 /* Low Section */
 
-.low-section {
-    display: flex;
-    justify-content: space-between;
-}
-
-.low-section .blog {
-    flex-basis: 60%;
-}
-
-.low-section .testimonials {
-    flex-basis: calc(40% - 2rem);
+@media only screen and (min-width: 768px) {
+    .low-section {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .low-section .blog {
+        flex-basis: 60%;
+    }
+    
+    .low-section .testimonials {
+        flex-basis: calc(40% - 2rem);
+    }
 }
 
 .blog-entry {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .blog-entry {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .blog-entry:last-of-type {
     margin-bottom: 0;
 }
 
-.blog-entry .blog-img {
-    flex-basis: 40%;
-}
-
-.blog-entry .text-entry {
-    flex-basis: calc(60% - 3rem);
+@media only screen and (min-width: 768px) {
+    .blog-entry .blog-img {
+        flex-basis: 40%;
+    }
+    
+    .blog-entry .text-entry {
+        flex-basis: calc(60% - 3rem);
+    }
 }
 
 .text-entry a{
@@ -331,14 +417,25 @@ h4 {
 
 .footer-container {
     padding: 3rem 0;
-    display: flex;
-    justify-content: space-between;
     text-align: center;
 }
 
-/* .site-footer nav {
+@media only screen and (min-width: 768px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.site-footer nav {
     display: none;
-} */
+}
+
+@media only screen and (min-width: 768px) {
+    .site-footer nav {
+        display: block;
+    }
+}
 
 .copyright {
     margin: 0;
@@ -348,10 +445,12 @@ h4 {
 /* Interns */
 /* Us */
 
-.us-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
+@media only screen and (min-width: 768px) {
+    .us-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+    }
 }
 
 .us-text blockquote{
@@ -421,3 +520,4 @@ textarea {
     justify-content: space-between;
     
 }
+
