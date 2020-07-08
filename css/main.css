@@ -75,7 +75,7 @@ h4 {
     border: none;
     border-radius: 1rem;
     display: block;
-    flex: 0 0 100%;
+    flex: 0 0 80%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -87,26 +87,22 @@ h4 {
 
 .button:hover {
     cursor: pointer;
+    background-color: #e08709
 }
 
 .yellow-button {
-    background-color: #e08709;
+    background-color: #282c34;
 }
 
 .green-button {
-    background-color: #71b100;
+    background-color: #282c34;
 }
 
 /* Header */
 
 .site-header {
-    background-color: #333333;
+    background-color: #282c34;
     padding: 1rem 0 3rem 0 ;
-}
-
-.site-header {
-    background-color: #333333;
-    padding: 1rem 0 3rem 0;
 }
 
 .site-header.inicio {
@@ -217,7 +213,8 @@ h4 {
 
 .icon {
     text-align: center;
-    /* line-height: 2.5rem; */
+    line-height: 2.5rem;
+    padding: 2.5rem;
 }
 
 
@@ -332,13 +329,14 @@ h4 {
 }
 
 .blog-entry {
-    margin-bottom: 2rem;
+    margin-bottom: 7rem;
 }
 
 @media only screen and (min-width: 768px) {
     .blog-entry {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 4rem;
     }
 }
 
@@ -371,7 +369,7 @@ h4 {
     display: block;
     width: 15rem;
     height: .5rem;
-    background-color: #71b100;
+    background-color: #282c34;
     margin-top: 1rem;
 }
 
@@ -382,7 +380,7 @@ h4 {
 /* Testimonials */
 
 .testimonial {
-    background-color: #71b100;
+    background-color: #282c34;
     font-size: 2.4rem;
     padding: 2rem;
     color: #ffffff;
@@ -411,7 +409,7 @@ h4 {
 /* Footer */
 
 .site-footer {
-    background-color: #333333;
+    background-color: #282c34;
     margin: 0;
 }
 
@@ -486,7 +484,6 @@ label {
     font-weight: 700;
     display: block;
     text-transform: uppercase;
-    display: block;
 }
 
 input:not([type="submit"]),
@@ -499,6 +496,15 @@ select {
     margin-bottom: 2rem;
     border:none;
     border-radius: .5rem;
+}
+
+@media (max-width: 768px) {
+    input:not([type="submit"]),
+    textarea,
+    select{
+        width: 90%;
+        display: inline-block;
+    }
 }
 
 input[type="radio"] {
