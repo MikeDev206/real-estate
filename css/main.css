@@ -11,7 +11,6 @@ body {
     margin: 0;
 }
 
-
 /* Global */
 
 img {
@@ -41,7 +40,6 @@ h4 {
     font-size: 2.6rem;
 }
 
-
 /* Utilities */
 
 .section {
@@ -64,7 +62,6 @@ h4 {
 .centered-content {
     max-width: 800px;
 }
-
 
 /* Buttons */
 
@@ -103,8 +100,18 @@ h4 {
     background-color: #282c34;
 }
 
-
 /* Header */
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: bolder;
+    font-family: "Courier New", Courier, monospace;
+}
 
 .site-header {
     background-color: #282c34;
@@ -152,7 +159,6 @@ h4 {
     }
 }
 
-
 /* Navigation */
 
 .nav a {
@@ -180,7 +186,6 @@ h4 {
     color: #71b100;
 }
 
-
 /*Hamburger menu*/
 
 .hamburger img {
@@ -207,7 +212,6 @@ h4 {
     }
 }
 
-
 /* Us icons */
 
 @media only screen and (min-width: 768px) {
@@ -232,7 +236,6 @@ h4 {
 .icon h3 {
     text-transform: uppercase;
 }
-
 
 /* Ads */
 
@@ -292,7 +295,6 @@ p {
     justify-content: flex-end;
 }
 
-
 /* Home Contact */
 
 .contact-img {
@@ -312,7 +314,6 @@ p {
 .container-contact p {
     font-size: 1.8rem;
 }
-
 
 /* Low Section */
 
@@ -377,7 +378,6 @@ p {
     color: #e08709;
 }
 
-
 /* Testimonials */
 
 .testimonial {
@@ -406,7 +406,6 @@ p {
     padding-left: 5rem;
     font-weight: 300;
 }
-
 
 /* Footer */
 
@@ -442,9 +441,7 @@ p {
     color: #ffffff;
 }
 
-
 /* Interns */
-
 
 /* Us */
 
@@ -463,7 +460,6 @@ p {
     padding: 1rem 0 3rem 0;
 }
 
-
 /* Ad */
 
 .resume-property {
@@ -471,7 +467,6 @@ p {
     justify-content: space-evenly;
     align-items: center;
 }
-
 
 /* Contacto */
 
